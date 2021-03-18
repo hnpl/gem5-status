@@ -34,19 +34,18 @@ if __name__ == "__main__":
             simout_has_success = "Unknown"
             try:
                 to_write = "{},{},{},{},{}".format(result['string'], result['status'], result['running'], result['kill_reason'], result['return_code'])
-                if args.finished:
-                    simout_file = os.path.join(dirname, "simout")
-                    try:
-                        has_success = False        
-                        with open(simout_file, "r") as h:
-                            for line in h.readlines():
-                                line = line.strip()
-                                if line.startswith("Success!"):
-                                    has_success = True
-                                    break
-                        simout_has_success = str(has_success)
-                    except:
-                        print("warn: {} is invalid".format(simout_output_file))
+                simout_file = os.path.join(dirname, "simout")
+                try:
+                    has_success = False        
+                    with open(simout_file, "r") as h:
+                        for line in h.readlines():
+                            line = line.strip()
+                            if line.startswith("Success!"):
+                                has_success = True
+                                break
+                    simout_has_success = str(has_success)
+                except:
+                    print("warn: {} is invalid".format(simout_output_file))
                 to_write += ",{}".format(simout_has_success)
                 f.write(to_write+"\n")
             except KeyError:
