@@ -44,8 +44,8 @@ X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img o3 MI_example 2 systemd,Fai
 X86_MESI_Two_Level run_exit vmlinux-5.4.49 boot-exit.img o3 MESI_Two_Level 2 init,Finished,False,,0,True
 X86_MESI_Two_Level run_exit vmlinux-5.4.49 boot-exit.img o3 MESI_Two_Level 2 systemd,Failed,False,,-6,False
 X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img o3 MOESI_CMP_directory 2 init,Finished,False,,0,True
-X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img o3 MOESI_CMP_directory 2 systemd,Running,True,,0,False
-X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img o3 MI_example 8 systemd,Running,True,,0,False
+X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img o3 MOESI_CMP_directory 2 systemd,Failed,False,,-6,False
+X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img o3 MI_example 8 systemd,Failed,False,timeout,-9,False
 X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img o3 MI_example 8 init,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img o3 MOESI_CMP_directory 8 systemd,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img o3 MOESI_CMP_directory 8 init,Finished,False,,0,True
@@ -62,9 +62,10 @@ X86 run_exit vmlinux-5.4.49 boot-exit.img o3 classic 1 init,Finished,False,,0,Tr
 X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img o3 MI_example 4 systemd,Failed,False,timeout,-9,False
 X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img o3 MI_example 4 init,Finished,False,,0,True
 X86_MESI_Two_Level run_exit vmlinux-5.4.49 boot-exit.img o3 MESI_Two_Level 4 init,Finished,False,,0,True
-X86_MESI_Two_Level run_exit vmlinux-5.4.49 boot-exit.img o3 MESI_Two_Level 4 systemd,Running,True,,0,False
+X86_MESI_Two_Level run_exit vmlinux-5.4.49 boot-exit.img o3 MESI_Two_Level 4 systemd,Failed,False,,-6,False
 X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img o3 MOESI_CMP_directory 4 systemd,Failed,False,timeout,-9,False
 X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img o3 MOESI_CMP_directory 4 init,Finished,False,,0,True
+X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img simple MI_example 1 init,Finished,False,,0,True
 X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img simple MI_example 1 systemd,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img simple MOESI_CMP_directory 1 init,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img simple MOESI_CMP_directory 1 systemd,Finished,False,,0,True
@@ -85,12 +86,13 @@ X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img simple MOESI_CMP_d
 X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img simple MI_example 8 systemd,Finished,False,,0,True
 X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img simple MI_example 8 init,Finished,False,,0,True
 X86 run_exit vmlinux-5.4.49 boot-exit.img simple classic 8 init,Failed,False,timeout,-9,False
-X86 run_exit vmlinux-5.4.49 boot-exit.img simple classic 8 systemd,Running,True,,0,False
+X86 run_exit vmlinux-5.4.49 boot-exit.img simple classic 8 systemd,Failed,False,timeout,-9,False
 X86_MESI_Two_Level run_exit vmlinux-5.4.49 boot-exit.img simple MESI_Two_Level 8 init,Finished,False,,0,True
 X86_MESI_Two_Level run_exit vmlinux-5.4.49 boot-exit.img simple MESI_Two_Level 8 systemd,Finished,False,,0,True
 X86_MESI_Two_Level run_exit vmlinux-5.4.49 boot-exit.img simple MESI_Two_Level 4 systemd,Finished,False,,0,True
 X86_MESI_Two_Level run_exit vmlinux-5.4.49 boot-exit.img simple MESI_Two_Level 4 init,Finished,False,,0,True
-X86 run_exit vmlinux-5.4.49 boot-exit.img simple classic 4 init,Running,True,,0,False
+X86 run_exit vmlinux-5.4.49 boot-exit.img simple classic 4 init,Failed,False,timeout,-9,False
+X86 run_exit vmlinux-5.4.49 boot-exit.img simple classic 4 systemd,Running,True,,0,False
 X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img simple MI_example 4 init,Finished,False,,0,True
 X86_MI_example run_exit vmlinux-5.4.49 boot-exit.img simple MI_example 4 systemd,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-5.4.49 boot-exit.img simple MOESI_CMP_directory 4 init,Finished,False,,0,True
@@ -290,7 +292,7 @@ X86_MI_example run_exit vmlinux-4.14.134 boot-exit.img simple MI_example 2 init,
 X86_MOESI_CMP_directory run_exit vmlinux-4.14.134 boot-exit.img simple MOESI_CMP_directory 2 systemd,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-4.14.134 boot-exit.img simple MOESI_CMP_directory 2 init,Finished,False,,0,True
 X86 run_exit vmlinux-4.14.134 boot-exit.img simple classic 2 init,Failed,False,timeout,-9,False
-X86 run_exit vmlinux-4.14.134 boot-exit.img simple classic 2 systemd,Running,True,,0,False
+X86 run_exit vmlinux-4.14.134 boot-exit.img simple classic 2 systemd,Failed,False,timeout,-9,False
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img kvm MOESI_CMP_directory 1 init,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img kvm MOESI_CMP_directory 1 systemd,Finished,False,,0,True
 X86 run_exit vmlinux-4.19.83 boot-exit.img kvm classic 1 init,Finished,False,,0,True
@@ -359,6 +361,7 @@ X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img o3 MOESI_CMP_dire
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img o3 MOESI_CMP_directory 4 init,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img simple MOESI_CMP_directory 4 init,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img simple MOESI_CMP_directory 4 systemd,Finished,False,,0,True
+X86 run_exit vmlinux-4.19.83 boot-exit.img simple classic 4 init,Running,True,,0,False
 X86 run_exit vmlinux-4.19.83 boot-exit.img simple classic 4 systemd,Failed,False,timeout,-9,False
 X86_MI_example run_exit vmlinux-4.19.83 boot-exit.img simple MI_example 4 init,Finished,False,,0,True
 X86_MI_example run_exit vmlinux-4.19.83 boot-exit.img simple MI_example 4 systemd,Finished,False,,0,True
@@ -374,13 +377,14 @@ X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img simple MOESI_CMP_
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img simple MOESI_CMP_directory 1 systemd,Finished,False,,0,True
 X86_MESI_Two_Level run_exit vmlinux-4.19.83 boot-exit.img simple MESI_Two_Level 2 init,Finished,False,,0,True
 X86_MESI_Two_Level run_exit vmlinux-4.19.83 boot-exit.img simple MESI_Two_Level 2 systemd,Finished,False,,0,True
-X86 run_exit vmlinux-4.19.83 boot-exit.img simple classic 2 systemd,Running,True,,0,False
+X86 run_exit vmlinux-4.19.83 boot-exit.img simple classic 2 systemd,Failed,False,timeout,-9,False
 X86 run_exit vmlinux-4.19.83 boot-exit.img simple classic 2 init,Failed,False,timeout,-9,False
 X86_MI_example run_exit vmlinux-4.19.83 boot-exit.img simple MI_example 2 systemd,Finished,False,,0,True
 X86_MI_example run_exit vmlinux-4.19.83 boot-exit.img simple MI_example 2 init,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img simple MOESI_CMP_directory 2 systemd,Failed,False,kernel panic,-9,False
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img simple MOESI_CMP_directory 2 init,Finished,False,,0,True
-X86 run_exit vmlinux-4.19.83 boot-exit.img simple classic 8 init,Running,True,,0,False
+X86 run_exit vmlinux-4.19.83 boot-exit.img simple classic 8 systemd,Running,True,,0,False
+X86 run_exit vmlinux-4.19.83 boot-exit.img simple classic 8 init,Failed,False,timeout,-9,False
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img simple MOESI_CMP_directory 8 init,Finished,False,,0,True
 X86_MOESI_CMP_directory run_exit vmlinux-4.19.83 boot-exit.img simple MOESI_CMP_directory 8 systemd,Finished,False,,0,True
 X86_MESI_Two_Level run_exit vmlinux-4.19.83 boot-exit.img simple MESI_Two_Level 8 systemd,Finished,False,,0,True
